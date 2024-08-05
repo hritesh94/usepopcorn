@@ -424,6 +424,7 @@ function MovieDetails({ selectedId, onCloseMovie, onAddWatched, watched }) {
   // from lec 161 we get to know that if here in this line like before this line we have three useState hooks and after this line we have three useeffect hooks so here if we conditionally declare a hook or return statement here then the order of hooks gets broken and then the react gets confused and creates a bug so this is why we should always define hooks at the top level and not in some conditionals
   const {
     Title: title,
+    //eslint-disable-next-line
     Year: year,
     Poster: poster,
     Runtime: runtime,
